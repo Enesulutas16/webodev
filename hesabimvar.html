@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteViva - Giriş Yap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>NoteViva</h1>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="index.html">Kayıt Ol</a></li>
+                <li><a href="favorilerim.html">Favorilerim</a></li>
+                <li><button id="theme-toggle">🌙 Tema</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="form-section">
+            <h3>Giriş Yap</h3>
+            <form id="login-form" action="anasayfa.html" method="post">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Giriş Yap</button>
+            </form>
+            <p>Hesabınız yok mu? <a href="index.html">Kayıt Ol</a></p>
+            <p id="error-message" class="error"></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 NoteViva - Tüm hakları saklıdır.</p>
+        <div class="social-icons">
+            <a href="#">📱</a>
+            <a href="#">🐦</a>
+            <a href="#">📷</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

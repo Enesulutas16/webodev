@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteViva - Kayıt Ol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>NoteViva</h1>
+            <ul>
+                <li><a href="anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="hesabimvar.html">Giriş Yap</a></li>
+                <li><button id="theme-toggle">🌙 Tema</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="welcome-section">
+            <img src="NoteViva.png" alt="NoteViva Logo" class="logo">
+            <h2>Müzik Dünyasına Hoş Geldiniz!</h2>
+            <p>NoteViva, müzikseverlerin bir araya geldiği, en sevdikleri şarkıları keşfettiği ve paylaştığı bir platformdur. Hadi başlayalım!</p>
+        </section>
+        <section class="form-section">
+            <h3>Kayıt Ol</h3>
+            <form id="register-form" action="anasayfa.html" method="post">
+                <label for="name">Ad:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="surname">Soyad:</label>
+                <input type="text" id="surname" name="surname" required>
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Kayıt Ol</button>
+            </form>
+            <p>Zaten hesabınız var mı? <a href="hesabimvar.html">Giriş Yap</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 NoteViva - Tüm hakları saklıdır.</p>
+        <div class="social-icons">
+            <a href="#">📱</a>
+            <a href="#">🐦</a>
+            <a href="#">📷</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
